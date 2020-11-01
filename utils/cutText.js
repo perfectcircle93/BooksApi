@@ -1,7 +1,8 @@
 module.exports = (content, maxLength) => {
   if(
       typeof content !== 'string' ||
-      typeof maxLength !== 'number'
+      typeof maxLength !== 'number' ||
+      maxLength <= 0
     ) 
       return 'Error';
   if(content.length < 1) return 'Error';
